@@ -1,4 +1,7 @@
 # site-strelok
+
+https://vomico.github.io/site-strelok/
+
 //EN
 Shooting club website. Frontend project for college coursework
 Used: HTML, CSS, a few JS
