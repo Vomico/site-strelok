@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стрелок - Стрелковый клуб</title>
+    <link rel="icon" type="image/png" href="img/logomini.png">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.4.slim.min.js"></script>
+</head>
+<body>
+        <!--
+            Лендинг
+            Хеадер меню через якоря
+            Крастный, черный, белый (светло серый)
+            
+            Отделы: Курсы, арсенал, контакты, аренда полигонов
+
+            Страница отправки данных
+        -->
+    <header id="top">
+              <div class="logo">
+                <a href="#top">
+                  <img src="img/logo.png" alt="СТРЕЛОК">
+                </a>
+              </div>
+              <div class="menu">
+                <ul class="navbar">
+                  <li><a href="#kurs">Курсы</a></li>
+                  <li><a href="#Arsenal">Арсенал</a></li>
+                  <li><a href="#people">Инструкторы</a></li>
+                  <li><a href="#about_us">Контакты</a></li>
+                </ul>
+              </div>
+    </header>
+    
+    <main class="main">
+        <div class="wrapper">
+          <button onclick="topFunction()" id="myBtn">Вверх</button>
+          <div class="kurs" id="kurs">
+            <h1>Знакомство со стрельбой</h1>
+            <p>
+              Выберите курс безопасного обращения с огнестрельным оружием и получите навыки быстрой
+              и меткой стрельбы. Постреляете с разной дистанции, с места, в движении, из разных
+              пистолетов и карабина. Инструктор объяснит как правильно держать пистолет, обучит заряжанию:
+              будете самостоятельно вставлять магазин, досылать патрон в патронник и разряжать.
+              Потренируетесь как безопасно перемещаться с заряженным оружием и быстро принимать решения
+              при выполнении нескольких непривычных задач и всё это под контролем профессионала!
+            </p>
+          </div>
+
+          <div class="kurs_begginer">
+            <h2>Базовые курсы для новичков</h2>
+            <p>
+              Программы, включающие обучение навыкам безопасного обращения с оружием,
+              меткой и быстрой стрельбы, после прохождения которых стрелок становится
+              членом клуба и получает доступ ко всему спектру развлекательных испортивных услуг.
+            </p>
+
+            <div class="cart"><!--cart2 margin: 0 51px -->
+                              <!--allcarts width: 366px -->
+
+              <div class="a_cart cart1">
+                <div class="cb1_img">
+                  <img src="img/cb1.jpg">
+                </div>
+
+                <!--Первая-->
+                <div class="text1">
+                  <div class="shrt_info">
+                    <div class="tag">
+                    ≈ 45 минут, 3 вида оружия
+                    </div>
+                  </div>
+
+                  <h3>Универсальный курс стрельбы «Современное оружие»</h3>
+
+                  <p>
+                    Постреляйте из популярных пистолетов «Глок» (отдельно и с тактическим блоком) и «Танфолио Сток III»,
+                    которые стоят на вооружении в полиции и спецподразделениях во многих странах мира.
+                  </p>
+                </div>
+
+                <div class="button_div" id="button_div_1"><a class="button"><span class="price">от 6 900 ₽</span><span class="sub">Забронировать</span></a></div>
+              </div>
+              <!--Первая-->
+
+              <!--Вторая-->
+              <div class="a_cart cart2">
+                <div class="cb1_img">
+                  <img src="img/cb2.jpg">
+                </div>
+
+                <div class="text1">
+                  <div class="shrt_info">
+                    <div class="tag">
+                    ≈ 60 минут, 6 вида оружия
+                    </div>
+                  </div>
+
+                  <h3>Расширенный курс стрельбы «Современное оружие плюс»</h3>
+
+                  <p>
+                    Широкий арсенал современного оружия! Все лучшее и известное: пистолеты «Глок» (отдельно,
+                    с тактическим блоком и подствольным фонарем), «Танфолио Сток III», знаменитый «Макаров» и
+                    мощный тюнингованный карабин концерна «Калашников».
+                  </p>
+                </div>
+
+                <div class="button_div" id="button_div_2"><a class="button"><span class="price">от 13 000 ₽</span><span class="sub">Забронировать</span></a></div>
+              </div>
+              <!--Вторая-->
+
+              
+              <!--Третья-->
+              <div class="a_cart cart3">
+                <div class="cb1_img">
+                  <img src="img/cb3.jpg">
+                </div>
+
+                <div class="text1">
+                  <div class="shrt_info">
+                    <div class="tag">
+                    ≈ 120 минут, 10 вида оружия
+                    </div>
+                  </div>
+
+                  <h3>Расширенный курс стрельбы «Современное оружие Максимум»</h3>
+
+                  <p>
+                    Двухчасовая программа стрельбы! Постреляйте из самого известного и лучшего современного оружия
+                    которые стоят на вооружении в полиции и спецподразделениях во многих странах мира.
+                  </p>
+                </div>
+
+                <div class="button_div" id="button_div_3"><a class="button"><span class="price">от 20 900 ₽</span><span class="sub">Забронировать</span></a></div>
+              </div>
+              <!--Третья-->
+
+            </div>
+
+          </div>
+
+          <div class="kurs_advenced">
+            <h2>Продвинутые курсы</h2>
+
+            <div class="cart"><!--cart2 margin: 0 51px -->
+                              <!--allcarts width: 366px -->
+              <!--Первая-->
+              <div class="a_cart cart1">
+                <div class="ca1_img">
+                  <img src="img/ca1.jpg">
+                </div>
+
+                <div class="text1">
+                  <div class="shrt_info">
+                    <div class="tag">
+                    ≈ 60 минут, 1 - 2 человека
+                    </div>
+                  </div>
+
+                  <h3>Индивидуальная тренировка</h3>
+
+                  <p>
+                    Только вы и инструктор — для эффективного развития и быстрой коррекции ошибок при стрельбе.
+                    Тренировки проходят по правилам и стандартам практической стрельбы.
+                    В этом виде спорта любой может стать чемпионом, развить координацию,
+                    точность и четкость движений и получить море радости! Научитесь безопасно владеть оружием,
+                    попадать в цель и участвуйте в соревнованиях. 
+                  </p>
+                </div>
+
+                <div class="button_div" id="button_div_4"><a class="button"><span class="price">от 2 300 ₽</span><span class="sub">Забронировать</span></a></div>
+              </div>
+              <!--Первая-->
+
+              <!--Вторая-->
+              <div class="a_cart cart2">
+                <div class="ca2_img">
+                  <img src="img/ca2.jpg">
+                </div>
+
+                <div class="text1">
+                  <div class="shrt_info">
+                    <div class="tag">
+                    ≈ 60 минут, 3 - 4 человека
+                    </div>
+                  </div>
+
+                  <h3>Групповая тренировка</h3>
+
+                  <p>
+                    Развиваться вместе с друзьями или коллегами — чтобы посматривать на их успехи
+                    и заниматься в спокойном ритме. Тренируйтесь под руководством инструктора,
+                    чтобы расти и завоевывать награды в практической стрельбе. В клубе созданы
+                    комфортные условия для того, чтобы совершенствовать навыки, улучшать результаты и
+                    участвовать в соревнованиях с другими спортсменами. 
+                  </p>
+                </div>
+
+                <div class="button_div" id="button_div_5"><a class="button"><span class="price">от 1 000 ₽</span><span class="sub">Забронировать</span></a></div>
+              </div>
+              <!--Вторая-->
+              
+              <!--Третья-->
+              <div class="a_cart cart3">
+                <div class="ca3_img">
+                  <img src="img/ca3.jpg">
+                </div>
+
+                <div class="text1">
+                  <div class="shrt_info">
+                    <div class="tag">
+                    ≈ 120 минут, 10 вида оружия
+                    </div>
+                  </div>
+
+                  <h3>Курс стрельбы «Терминатор»</h3>
+
+                  <p>
+                    Окажись в роли главного героя крутого боевика! Шесть невероятных упражнений:
+                    стрельба сидя на мотоцикле, лежа на подвижной поверхности, в движущиеся мишени и
+                    цели размером с монету из нескольких видов тюнингованных пистолетов, карабинов и
+                    дробовиков. Оцени насколько это реально, ощути адреналин и испытай меткость!
+                  </p>
+
+                </div>
+                <div class="button_div" id="button_div_6"><a class="button"><span class="price">от 15 000 ₽</span><span class="sub">Забронировать</span></a></div>
+              </div>
+              <!--Третья-->
+            </div>
+        </div>
+
+        <div class="Arsenal" id="Arsenal">
+          <h1>Арсенал</h1>
+
+
+          <div class="Sex_Pistols">
+
+            <h2>ПИСТОЛЕТЫ</h2>
+
+            <div class="cart"><!--cart2 margin: 0 51px -->
+              <!--allcarts width: 366px -->
+              <!--Первая-->
+              <div class="a_cart cart1">
+              <div class="ap1_img">
+                <img src="img/p1.jpg">
+              </div>
+
+              <div class="text">
+                <div class="shrt_info">
+                  <div class="tag">
+                  9mm Parabellum, 17 патронов
+                  </div>
+                </div>
+
+                <h3>Glock-17</h3>
+
+                <p>
+                  австрийский пистолет, разработанный фирмой Glock для нужд австрийской армии.
+                  Он стал первым образцом вооружения, разработанным этой фирмой.
+                  Благодаря своим боевым качествам и надёжности получил широкое распространение в качестве гражданского оружия самообороны. 
+                </p>
+              </div>
+              </div>
+              <!--Первая-->
+
+              <!--Вторая-->
+              <div class="a_cart cart2">
+              <div class="ap2_img">
+                <img src="img/p2.jpg">
+              </div>
+
+              <div class="text">
+                <div class="shrt_info">
+                  <div class="tag">
+                    .45 ACP, 10 патронов
+                  </div>
+                </div>
+
+                <h3>CZ 97 B</h3>
+
+                <p>
+                  Адаптация Чешского пистолета CZ 75 под популярный в Америке патрон калибра .45ACP.
+                  Буква B в названии модели указывает на то, что он оснащен дополнительным предохранителем
+                  ударника, встроенным в CZ 75 в конце 1980-х годов. 
+                </p>
+              </div>
+              </div>
+              <!--Вторая-->
+
+              <!--Третья-->
+              <div class="a_cart cart3">
+              <div class="ap3_img">
+                <img src="img/p3.jpeg">
+              </div>
+
+              <div class="text">
+                <div class="shrt_info">
+                  <div class="tag">
+                    .45, 8 патронов
+                  </div>
+                </div>
+
+                <h3>TANFOGLIO WITNESS 1911</h3>
+
+                <p>
+                  Полуавтоматический пистолет на основе легендарного пистолета Кольт 1911.
+                  Итальянская оружейная компания Tanfoglio выпустила реплику, полностью
+                  идентичную оригиналу – мощную, надежную, простую в эксплуатации и обслуживании.
+                </p>
+              </div>
+              </div>
+              <!--Третья-->
+              </div>
+
+          </div>
+
+
+          <div class="karabin">
+
+            <h2>КАРАБИНЫ</h2>
+
+            <div class="cart"><!--cart2 margin: 0 51px -->
+              <!--allcarts width: 366px -->
+              <!--Первая-->
+              <div class="a_cart cart1">
+              <div class="ak1_img">
+                <img src="img/k1.jpg">
+              </div>
+
+              <div class="text">
+                <div class="shrt_info">
+                  <div class="tag">
+                    5,45х39, 10 патронов
+                  </div>
+                </div>
+
+                <h3>Сайга 5 (АК 74)</h3>
+
+                <p>
+                  Этот карабин - гражданская копия автомата АК-74М. Складной пластиковый приклад,
+                  узнаваемый ДТК, который часто можно увидеть в репортажах с армейских учений.
+                  Довершает сходство калибр 5,45х39 - он лишь недавно был сертифицирован как гражданский.
+                  Карабин хорошо подходит для практической стрельбы. 
+                </p>
+              </div>
+              </div>
+              <!--Первая-->
+
+              <!--Вторая-->
+              <div class="a_cart cart2">
+              <div class="ak2_img">
+                <img src="img/k2.jpg">
+              </div>
+
+              <div class="text">
+                <div class="shrt_info">
+                  <div class="tag">
+                    7,62×54, 10 патронов
+                  </div>
+                </div>
+
+                <h3>КО СВД</h3>
+
+                <p>
+                  КО СВД - еще один хороший пример огражданивания боевого оружия, на этот раз - знаменитой снайперской винтовки СВД.
+                  Винтовки со складов длительного хранения получают кримметки и выходят на рынок, сохраняя, к радости любителей оружия,
+                  все характеристики исходной снайперской винтовки, вплоть до маркировок. 
+                </p>
+              </div>
+              </div>
+              <!--Вторая-->
+
+              <!--Третья-->
+              <div class="a_cart cart3">
+              <div class="ak3_img">
+                <img src="img/k3.jpg">
+              </div>
+
+              <div class="text">
+                <div class="shrt_info">
+                  <div class="tag">
+                    9х19, 10 патронов
+                  </div>
+                </div>
+
+                <h3>Карабин ППШ-Luger</h3>
+
+                <p>
+                  Самозарядный нарезной карабин ППШ-Luger калибра 9х19 выполнен на базе пистолета-пулемета конструкции Г.С.
+                  Шпагина образца 1941 года и имеет схожие с прототипом массогабаритные характеристики.
+                </p>
+              </div>
+              </div>
+              <!--Третья-->
+              </div>
+
+              <div class="cart"><!--cart2 margin: 0 51px -->
+                <!--allcarts width: 366px -->
+                <!--Первая-->
+                <div class="a_cart cart1">
+                <div class="ak4_img">
+                  <img src="img/k4.jpg">
+                </div>
+  
+                <div class="text">
+                  <div class="shrt_info">
+                    <div class="tag">
+                      12/76, 10 патронов
+                    </div>
+                  </div>
+  
+                  <h3>Вепрь-12</h3>
+  
+                  <p>
+                    "Вепрь-12" - это полуавтоматический дробовик, созданный на базе конструкции РПК. Его отличают тяжесть, огневая мощь и надежность. Различные модификации "Вепря-12" пользуются заслуженной популярностью у практических стрелков, позволяя им занимать призовые места на отечественных и зарубежных кубках и чемпионатах.
+                  </p>
+                </div>
+                </div>
+                <!--Первая-->
+  
+                <!--Вторая-->
+                <div class="a_cart cart2">
+                <div class="ak5_img">
+                  <img src="img/k5.jpg">
+                </div>
+  
+                <div class="text">
+                  <div class="shrt_info">
+                    <div class="tag">
+                      5,56×45, 10 патронов
+                    </div>
+                  </div>
+  
+                  <h3>Вепрь-15 (ВПО-140)</h3>
+  
+                  <p>
+                    Карабин модели AR-15, гражданская версия американской армейской винтовки М-16, под патрон калибра 5,56×45 (.223 Rem). Данная модель оснащена коллиматорным прицелом для облегчения прицеливания, и регулируемым по длине прикладом для комфортного удержания.
+                  </p>
+                </div>
+                </div>
+                <!--Вторая-->
+  
+                <!--Третья-->
+                <div class="a_cart cart3">
+                <div class="ak6_img">
+                  <img src="img/k6.jpg">
+                </div>
+  
+                <div class="text">
+                  <div class="shrt_info">
+                    <div class="tag">
+                      7,62×54R, 5 патронов
+                    </div>
+                  </div>
+  
+                  <h3>КО-30-С</h3>
+  
+                  <p>
+                    Надёжная снайперская винтовка Мосина с большой прицельной дальностью и высокой мощностью патрона калибра 7,62×54R. Оснащена советским оптическим прицелом ПУ кратностью 3,5Х. Часто используется для охоты на крупного и среднего зверя, а также для промысла птицы.
+                  </p>
+                </div>
+                </div>
+                <!--Третья-->
+                </div>
+            
+          </div>
+        </div>
+
+        <div class="people" id="people">
+          <h1>Инструктора</h1>
+
+          <div class="table">
+
+            <!-- ПЕРВЫЙ -->
+            <div class="tb tb1">
+              <div class="tb_img">
+                <img src="img/tb1.jpg">
+              </div>
+              <div class="tb_txt">
+                <h3>Александр Самохвалов</h3>
+                <p>Инструктор, тренер и судья IPSC 2 категории. Кандидат в мастера спорта по практической стрельбе.Работает в клубе с 2017 года.</p>
+              </div>
+            </div>
+            <!-- ПЕРВЫЙ -->
+
+            <!-- ВТОРОЙ -->
+            <div class="tb tb2">
+              <div class="tb_img">
+                <img src="img/tb2.jpg">
+              </div>
+              <div class="tb_txt">
+                <h3>Роман Марченко</h3>
+                <p>Инструктор и тренер IPSC. Чемпион Мира, Европы по пулевой стрельбе. Работает в клубе с 2018 года.</p>
+              </div>
+            </div>
+            <!-- ВТОРОЙ -->
+
+            <!-- ТРЕТИЙ -->
+            <div class="tb tb3">
+              <div class="tb_img">
+                <img src="img/tb3.jpg">
+              </div>
+              <div class="tb_txt">
+                <h3>Дмитрий Рязанцев</h3>
+                <p>Инструктор, тренер IPSC. Работает в клубе с 2020 года.</p>
+              </div>
+            </div>
+            <!-- ТРЕТИЙ -->
+
+            <!-- ЧЕТВЁРТЫЙ -->
+            <div class="tb tb4">
+              <div class="tb_img">
+                <img src="img/tb4.jpg">
+              </div>
+              <div class="tb_txt">
+                <h3>Сергей Серавкин</h3>
+                <p>Инструктор и тренер IPSC. Первый спортивный разряд по практической стрельбе. Работает в клубе с 2017 года.</p>
+              </div>
+            </div>
+            <!-- ЧЕТВЁРТЫЙ -->
+          </div>
+
+        </div>
+
+        <div class="about_us" id="about_us">
+          <h1>Контакты</h1>
+          <div class="contact">
+            <div class="adr">
+              <p>Адрес: <p>117437, Москва, Улица Островитянова 10</p><p>График работы: с 10:00 по 20:00</p></p>
+            </div>
+            <div class="conta">
+              <p class="tel">Телефон: <a href="tel:+79199965818">+7 800 555 35 35</a></p>
+              <p class="mail">Почта: <a href="mailto:vomico31@gmail.com">scshooter@gmal.com</a></p>
+            </div>
+
+          </div>
+          <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d669.4694887971641!2d37.50194743520955!3d55.63998072519066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d5d3a6c3533%3A0x5c893ea392779431!2sUlitsa%20Ostrovityanova%2C%2010%2C%20Moskva%2C%20117437!5e0!3m2!1sen!2sru!4v1679777818019!5m2!1sen!2sru" width="1120" height="600"  style="box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </div>
+
+        <div class="form" id="form">
+          <form action="">
+            <h2>Заявка</h2>
+            <h4 id="title_text">Услуга</h4>
+            <label for="date"><p>Выберите дату</p>
+              <input type="date" max="2025-12-31" min="2023-03-27" name="date" id="" required></label>
+            <label for="time"><p>Желаемое время</p>
+              <input type="time" name="" id="" required></label>
+            <label for="koll"><p>Количество стрелков</p>
+              <input type="number" name="koll" id="" required>
+            </label>
+            <label for="name"><p>Ваше ФИО</p>
+              <input type="text" required>
+            </label>
+            <label for="tel"><p>Контактный телефон</p>
+              <input type="tel" name="" id="" required>
+            </label>
+            <label for="pass"><p>Паспортные данные</p>
+              <input type="text" required>
+            </label>
+            <h3>Нажимая Отправить Вы даете свое согласие на обработку персональных данных</h3>
+            <button>Отправить запрос</button>
+          </form>
+          <div id="close_area"></div>
+        </div>
+
+    </main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
